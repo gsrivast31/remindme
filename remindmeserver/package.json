@@ -1,0 +1,15 @@
+{
+  "name": "RemindMe",
+  "author": "Gaurav Srivastava",
+  "version": "0.0.1",
+  "description": "Create quick email reminders",
+  "dependencies": {
+    "express": "3.3.4",
+    "agenda": "*",
+    "mandrill-api": "*"
+   },
+   "scripts": {
+      "start": "node server.js"
+   }
+}
+

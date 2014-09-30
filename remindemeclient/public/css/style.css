@@ -1,0 +1,29 @@
+body { 
+    min-width: 270px; 
+    min-height: 350px;
+    overflow-x: hidden; 
+    font-family: Arial, sans-serif; 
+    font-size: 12px; 
+    margin: 0px;
+}
+
+fieldset {
+    margin: 0px;
+    padding: 2px;
+    width: 100%;
+}
+
+input {
+    height: 25px;
+    width: 250px;
+    margin: 10px;
+}
+input#save { 
+    font-weight: bold; width: auto; 
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+

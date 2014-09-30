@@ -1,0 +1,69 @@
+    <!doctype html>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<title>RemindMe</title>
+
+<!-- Bootstrap itself -->
+<link href="public/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+<!-- Custom styles -->
+<link rel="stylesheet" href="public/css/remindme.css">
+
+<!-- Fonts -->
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+    <script>document.createElement('section')</script>
+    <style type="text/css">
+        .holder {
+            position: relative;
+            z-index: 10000;
+        }
+        .datepicker {
+            display: block;
+        }
+    </style>
+<![endif]-->
+
+<!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
+<body class="theme-invert">
+
+<!-- Main (Home) section -->
+<div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">	
+				<h3 class="tagline">RemindMe</h3>
+				<div class="intro-subscribe">
+                    <form id="subscribe-form" method="POST" action="http://localhost:3000/createReminder">
+                        <div class="row col-sm-8 col-sm-offset-2">
+                            <input class="form-control" name="what" type="text" placeholder="What?"                                                       spellcheck="false" />
+                            <input class="form-control" name="whendate" type="date" placeholder="When-Date?"                                                       spellcheck="false" />
+                            <input class="form-control" name="whentime" type="time" placeholder="When-Time?"                                                       spellcheck="false" />
+                            <input class="form-control" name="whom" type="email" placeholder="Whom?"                                                       spellcheck="false" />
+                            <br>
+                            <input class="form-control submit" type="submit" value="Create Reminder" />
+                        </div>
+                    </form>
+                </div>
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+	</div>
+</div>
+
+<script src="public/js/jquery.2.0.0.js"></script>
+<script src="public/js/bootstrap.min.js"></script>
+<script src="public/js/popup.js"></script>
+
+
+</body>
+
+
+
